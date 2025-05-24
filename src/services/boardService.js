@@ -24,8 +24,6 @@ const createNew = async (reqBody) => {
 
 const getDetails = async (boardId) => {
     try {
-        console.log(boardId);
-
         const board = await boardModel.getDetails(boardId);
 
         if (!board) {
